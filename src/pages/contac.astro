@@ -1,0 +1,102 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_CONTAC, SITE_DESCRIPTION_CONTAC } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_CONTAC} description={SITE_DESCRIPTION_CONTAC} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1 class="title">Contactame</h1>
+
+			<p class="description">Enviame un mensaje y me pondre en contacto contigo lo antes posible.</p>
+
+			<form action="https://formspree.io/f/xqkrnbqd" method="POST" class="form">
+				<label class="label">
+					Nombre compañia:
+					<input type="text" name="name" required/>
+				</label>
+				<label class="label">
+					Email Compañia:
+					<input type="email" name="email" required/>
+				</label>
+				<label class="label">
+					Tu message:
+					<textarea name="message" required></textarea>
+				</label>
+				<!-- your other form fields go here -->
+				<button type="submit" class="send">Send</button>
+			</form>
+		</main>
+		<Footer />
+	</body>
+	<style>
+		.description{
+			width: 88%;
+			height: 25%;
+			align-items: center;
+			padding: 5em;
+			margin-left: -2em;
+			background-color: rgba(190, 188, 247, 0.349);
+			border-radius: 0.3em;
+		}
+		.title{
+			text-align: center;
+		}
+		.form {
+			margin-left: 17%;
+			width: 50%;
+			height: 50%;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			gap: 0.7rem;
+			background: #635b6f00;
+		}
+		.label {
+			display: flex;
+			flex-direction: column;
+			
+			background: rgba(140, 136, 163, 0);
+		}
+		.label input,
+		.label textarea {
+			
+			border: none;
+			font-size: 1rem;
+			background: rgba(90, 92, 116, 0.434);
+			color: white;
+			border-radius: 0.3rem;
+		}
+		
+		input,textarea{
+			padding: 0.5rem;
+			width: 150%;
+		}
+		.send {
+			align-items: center;
+			width: 28	%;
+			height: 5%;
+			padding: 0.4rem;
+			margin-left: 35%;
+			font-size: 1rem;
+			background: rgba(128, 128, 177, 0.54);
+			color: white;
+			border: none;
+			border-radius: 0.4rem;
+			cursor: pointer;
+		}
+		.send:hover {
+			background: rgba(59, 138, 64, 0.601);
+		}
+		@medie () {
+			
+		}
+	</style>
+</html>

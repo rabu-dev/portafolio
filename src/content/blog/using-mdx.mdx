@@ -1,31 +1,52 @@
 ---
-title: 'Using MDX'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 02 2022'
-heroImage: '/blog-placeholder-5.jpg'
+title: 'Curso html'
+description: 'Curso de html'
+pubDate: 'May 02 2024'
+logo: '/blog-placeholder-5.jpg'
 ---
 
-This theme comes with the [@astrojs/mdx](https://docs.astro.build/en/guides/integrations-guide/mdx/) integration installed and configured in your `astro.config.mjs` config file. If you prefer not to use MDX, you can disable support by removing the integration from your config file.
+## Introducción
 
-## Why MDX?
+¿Qué es HTML?
+HTML es el lenguaje de marcado para la creación de páginas web. Permite describir la estructura de una página web y su contenido.
 
-MDX is a special flavor of Markdown that supports embedded JavaScript & JSX syntax. This unlocks the ability to [mix JavaScript and UI Components into your Markdown content](https://docs.astro.build/en/guides/markdown-content/#mdx-features) for things like interactive charts or alerts.
+## Sintaxis básica
 
-If you have existing content authored in MDX, this integration will hopefully make migrating to Astro a breeze.
+HTML está compuesto por elementos, cada uno con una función específica. Por ejemplo, el elemento `<h1>` se utiliza para representar un encabezado de nivel 1 en una página web.
 
-## Example
+## Elementos básicos
 
-Here is how you import and use a UI component inside of MDX.  
-When you open this page in the browser, you should see the clickable button below.
+Aquí tienes algunos elementos básicos de HTML:
+
+- `<a>` para enlaces
+- `<img>` para imagenes
+- `<h1>` a `<h6>` para encabezados
+- `<p>` para párrafos
+- `<ul>` y `<ol>` para listas sin orden y orden respectivamente
+- `<li>` para elementos de lista
+- `<strong>` y `<em>` para texto en negrita y cursiva
+- `<blockquote>` para bloques de cita
+- `<code>` para código en línea
+- `<div>` para divisiones
+- `<span>` para divisiones en línea
+- `<main>` para contenido principal
+- `<header>` y `<footer>` para encabezado y pie de página respectivamente
+- `<nav>` para navegación
+- `<article>` para artículos
+- `<section>` para secciones
+- `<aside>` para contenido lateral
+- `<video>` y `<audio>` para multimedia
+- `<table>` para tablas
+- `<thead>` para el encabezado de la tabla
+- `<tbody>` para el cuerpo de la tabla
+- `<tfoot>` para el pie de página de la tabla
+- `<tr>` para filas de la tabla
+- `<th>` para celdas de encabezado
+- `<td>` para celdas de datos
+
 
 import HeaderLink from '../../components/HeaderLink.astro';
 
-<HeaderLink href="#" onclick="alert('clicked!')">
-	Embedded component in MDX
+<HeaderLink href="/blog">
+	ir al blog
 </HeaderLink>
-
-## More Links
-
-- [MDX Syntax Documentation](https://mdxjs.com/docs/what-is-mdx)
-- [Astro Usage Documentation](https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages)
-- **Note:** [Client Directives](https://docs.astro.build/en/reference/directives-reference/#client-directives) are still required to create interactive components. Otherwise, all components in your MDX will render as static HTML (no JavaScript) by default.

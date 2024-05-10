@@ -1,7 +1,7 @@
 {
   "name": "prochect",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astro-reactive/form": "^0.10.0",
     "@astrojs/mdx": "^2.3.1",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.4",
